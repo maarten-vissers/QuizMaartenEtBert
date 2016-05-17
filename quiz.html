@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Quiz</title>
+<link rel="stylesheet" type="text/css" href="CSS\style.css">
+
+
+<script type="text/javascript">
+
+
+window.onload = function(){
+
+	document.getElementById("answerButton").onclick = function(){
+
+		//create form object
+		var quiz = document.quiz;
+
+		//code for question 1
+		var q1 = false;
+		for (var i=0; i<quiz.q1.length; i++){
+			if (quiz.q1[i].checked) {
+				q1 = quiz.q1[i].value;
+				break;
+			}
+		}
+		var div = document.getElementById("q1");
+		switch (q1){
+			case "Justin Bieber - Sorry":
+				div.innerHTML = "Super";
+				div.className = "right";
+			break;
+			default:
+				div.innerHTML = "Faux";
+				div.className = "wrong";
+		}
+
+		//code for question 2
+		var q2 = false;
+		for (var i=0; i<quiz.q2.length; i++){
+			if (quiz.q2[i].checked) {
+				q2 = quiz.q2[i].value;
+				break;
+			}
+		}
+		var div = document.getElementById("q2");
+		switch (q2){
+			case "Favulous - Jenny From The Block":
+				div.innerHTML = "Super";
+				div.className = "right";
+			break;
+			case "Brennan Heart - Imaginary":
+				div.innerHTML = "Tu aimes le hardstyle? Super, mais Faux!";
+				div.className = "wrong";
+			break;
+			default:
+				div.innerHTML = "Faux";
+				div.className = "wrong";
+		}
+		//code fot question 3
+		var q3 = false;
+		for (var i=0; i<quiz.q3.length; i++){
+			if (quiz.q3[i].checked) {
+				q3 = quiz.q3[i].value;
+				break;
+			}
+		}
+		var div = document.getElementById("q3");
+		switch (q3){
+			case "Pitbull - Timber":
+				div.innerHTML = "Super";
+				div.className = "right";
+			break;
+			case "Noicecontrollers - Down Down":
+				div.innerHTML = "Tu aimes le hardstyle? Super, mais Faux!";
+				div.className = "wrong";
+			break;
+			default:
+				div.innerHTML = "Faux";
+				div.className = "wrong";
+		}
+
+		//code for question 4
+		var q4 = false;
+		for (var i=0; i<quiz.q4.length; i++){
+			if (quiz.q4[i].checked) {
+				q4 = quiz.q4[i].value;
+				break;
+			}
+		}
+		var div = document.getElementById("q4");
+		switch (q4){
+			case "Zombie":
+				div.innerHTML = "Super";
+				div.className = "right";
+			break;
+			default:
+				div.innerHTML = "Faux";
+				div.className = "wrong";
+		}
+
+		//code for question 5
+		var q5 = false;
+		for (var i=0; i<quiz.q5.length; i++){
+			if (quiz.q5[i].checked) {
+				q5 = quiz.q5[i].value;
+				break;
+			}
+		}
+		var div = document.getElementById("q5");
+		switch (q5){
+			case "Belge":
+				div.innerHTML = "Super";
+				div.className = "right";
+			break;
+			default:
+				div.innerHTML = "Faux";
+				div.className = "wrong";
+		}
+
+		//code for question 6
+		var q6 = false;
+		for (var i=0; i<quiz.q6.length; i++){
+			if (quiz.q6[i].checked) {
+				q6 = quiz.q6[i].value;
+				break;
+			}
+		}
+		var div = document.getElementById("q6");
+		switch (q6){
+			case "Ukraine":
+				div.innerHTML = "Super";
+				div.className = "right";
+			break;
+			default:
+				div.innerHTML = "Faux";
+				div.className = "wrong";
+		}
+	};
+}
+
+
+</script>
+
+
+
+</head>
+
+<body>
+
+<h1>Quiz musical</h1>
+
+<form name="quiz">
+	<ol>
+	<!--Vraag 1-->
+		<li class="vraag">
+			<h3 >Nom de la chanson</h3>
+			<audio controls style="margin-top:0%">
+				<source src="MUSIC\Sorry.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+
+			<br>
+				<input type="radio" name="q1" value="Justin Bieber - Sorry"/>Justin Bieber - Sorry<br />
+				<input type="radio" name="q1" value="Bruno Mars - Grenade"/>Bruno Mars - Grenade<br />
+				<input type="radio" name="q1" value="Justin Bieber - What do you mean?"/>Justin Bieber - What do you mean?<br />
+				<input type="radio" name="q1" value="Mika - Happy Ending"/>Mika - Happy Ending
+				<div id="q1"></div>
+		</li>
+
+	<!--Vraag 2-->
+		<li class="vraag">
+			<h3>Nom de la chanson</h3>
+			<audio controls style="margin-top:0%">
+				<source src="MUSIC\Jenny.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+
+			<br>
+				<input type="radio" name="q2" value="Brennan Heart - Imaginary"/>Brennan Heart - Imaginary<br />
+				<input type="radio" name="q2" value="Eminem - Love the way you lie"/>Eminem - Love the way you lie<br />
+				<input type="radio" name="q2" value="Favulous - Jenny From The Block"/>Favulous - Jenny From The Block<br />
+				<input type="radio" name="q2" value="Tiesto - Red Lights"/>Tiesto - Red Lights
+				<div id="q2"></div>
+		</li>
+
+		<!--Vraag 3-->
+		<li class="vraag">
+			<h3>Google translate anglais-francais... ça ne marche pas vraiment <img style="height:3%; width:3%;"src="IMG\emoticon.png"/></h3>
+			<h4><blockquote style="font-style:italic">Il est en baisse, je suis crier du bois. Vous aller mieux, tu danses mieux. Nous allons faire une nuit, il ne sera pas retenir. Je vais être celui, vous n'oublierez pas !</blockquote></h4>
+
+			<br>
+				<input type="radio" name="q3" value="Noicecontrollers - Down Down"/>Noicecontrollers - Down Down<br />
+				<input type="radio" name="q3" value="Black Eyed Peace - Don't stop the party"/>Black Eyed Peace - Don't stop the party<br />
+				<input type="radio" name="q3" value="Pitbull - Timber"/>Pitbull - Timber<br />
+				<input type="radio" name="q3" value="Laura Omloop - Ik wil meer"/>Laura Omloop - Ik wil meer
+				<div id="q3"></div>
+		</li>
+	</li>
+
+	<!--Vraag4-->
+	<li class="vraag">
+		<h3> Devinez le mot qui remplace les 3 points. </h3>
+		<h4><blockquote style="font-style:italic"> Stop, je tisse des liens, j'en perds le fil
+		Bâtis ma vie, construit dans l'vide
+		Les gens me disent : "L'espoir fait vivre"
+		Comment m'faire vivre ? Je suis un ...
+		Ohohohohhhhhh je suis un ...
+		Ohohohohhhhhh je suis un ...</blockquote></h4>
+
+		<br>
+		<input type="radio" name="q4" value="Garçon"/> Garçon <br/>
+		<input type="radio" name="q4" value="Ordinateur"/> Ordinateur <br/>
+		<input type="radio" name="q4" value="Chanteur"/> Chanteur <br/>
+		<input type="radio" name="q4" value="Zombie"/> Zombie <br/>
+		<div id="q4"></div>
+		</li>
+
+<!--Vraag5-->
+<li class="vraag">
+	<h3>Devinez la nationalité du musicien. </h3>
+	<audio controls style="margin-top:0%">
+		<source src="MUSIC\netsky.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+
+	<br>
+	<input type="radio" name="q5" value="Belge"/> Belge <br/>
+	<input type="radio" name="q5" value="Anglais"/> Anglais <br/>
+	<input type="radio" name="q5" value="Français" /> Français <br/>
+	<input type="radio" name="q5" value="Allemand" /> Allemand <br/>
+	<div id="q5"></div>
+</li>
+
+<!--Vraag6-->
+<li class="vraag">
+	<h3>Quel pays a gagné le concours Eurovision?</h3>
+
+	<br>
+	<input type="radio" name="q6" value="Russie"/>La Russie <br/>
+	<input type="radio" name="q6" value="Pologne"/>La  Pologne <br/>
+	<input type="radio" name="q6" value="Ukraine" />L' Ukraine <br/>
+	<input type="radio" name="q6" value="Australie" />L' Australie <br/>
+	<div id="q6"></div>
+</li>
+
+
+
+	</ol>
+	<input type="button" class="button" id="answerButton" value="Réponses"/>
+<form>
+
+</body>
+</html>
